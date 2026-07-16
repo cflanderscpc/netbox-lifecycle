@@ -3,14 +3,8 @@ on:
   push:
     branches:
       - 'close-44'
-      - 'main'
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-    branches:
-      - 'main'
+  workflow_dispatch:
+    
 concurrency:
   group: ci-${{ github.event_name }}-${{ github.ref }}-${{ github.actor }}
   cancel-in-progress: true
