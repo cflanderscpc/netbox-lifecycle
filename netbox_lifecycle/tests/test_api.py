@@ -568,7 +568,6 @@ class EoXAPISettingsTest(APIViewTestCases.APIViewTestCase):
         'driver',
         'id',
         'manufacturer',
-        'url',
     ]
 
     user_permissions = ('dcim.view_manufacturer',)
